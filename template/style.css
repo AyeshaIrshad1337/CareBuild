@@ -1,10 +1,30 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lalezar&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-body{
-    width: 50%;
-    height: 3890px;
-    position: relative; 
-    background: linear-gradient(180deg, black 28%, rgba(77.56, 73.04, 73.04, 0) 100%);    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
+  html{
+     height:  3890px;
+    background: linear-gradient(180deg, black 28%, rgba(77.56, 73.04, 73.04, 0) 100%);  
+    scroll-behavior: smooth;
+ 
+}
+body{
+    background: rgba(77.56, 73.04, 73.04, 0);
+}
+/* HEADER */
+header{
+    width:100%;
+    height: 100vh;
+    background-size:cover ;
+    background-position: center;
+    font-size: 17px;
+   
+  }
 
 header .logo {
     filter:blur(120px);
@@ -19,17 +39,18 @@ header .logo {
     overflow: hidden; /* Hide the bottom half of the image */
 }
 
-img {
-    width: 50%; /* Adjust as needed */
-    height: 50%;
-    margin-top: -20%; /* Adjust as needed */
-    object-fit: cover; /* Ensure the image covers the entire container */
-    position: relative;
-    top: 0; /* Move the image down to show the top half */
+
+nav{
+    margin-left: 2%;
+    margin-top: -5%;
+    width: 80%;
+    height: 100px;
+
+position: inline-block;
 }
 nav .menu{
-    margin-top: -18%;
-     margin-left: 80%;
+    margin-top: -10%;
+padding-left: 45%;
     width: 100%;
     height: 100px;
     color:white;
@@ -42,7 +63,6 @@ nav .menu{
     padding: 10px 20px;
     font-family: Inter;
     
-    font-size: 20px;
     position: relative;
   }
   
@@ -60,8 +80,156 @@ nav .menu{
   .menu a:hover{
     color: #F99300;
   }
-  .menu a:hover:before{
+ .SignIn a ,.menu a:hover:before{
     width:40%;
     align-items: center;
    margin-left: 25%;
   }
+  .SignUp{
+    margin-top: -2%;
+    font-size: 14px;
+ font-family: Roboto;
+ 
+}
+  .SignUp a{
+    margin-left: 80%;
+    
+    text-decoration: none;
+    color: #F99300;
+    
+    padding:10px 20px;
+    font-size: 20px;
+    background:transparent;
+    border: 1px solid #F99300;
+    border-radius: 4px;
+    
+}
+.SignUp a:hover{
+    color: white;
+    
+    background:#F99300;
+    
+}
+.SignIn{
+margin-left: 35%;;   
+    font-size: 17px;
+    font-family: Roboto;
+     
+}
+
+/* Main Body */
+main .main-side{
+        margin-top: 4%;
+        
+        filter:blur(120px);
+        width: 200px; /* Adjust as needed */
+        height: 200px; /* Half of the width to create a half circle */
+        background: #F99300;
+        border-radius: 0 50% 50% 0%; /* Half circle at the top */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide the bottom half of the image */
+    
+}
+/* Main Body Headers */
+main .header-container{
+    margin-top: -25%;
+    margin-left: 20%;
+    
+    height: auto;
+    display: flex;
+  align-items: center;
+}
+main .header-container h1{
+    font-size: 52px;
+    font-family: Inter;
+    color: white;
+    font-weight: 700;
+}
+main .header-container h1 strong{
+    color: #F99300;
+}
+main .header-container img{
+    width: 404px;
+height: 361px;
+margin-left: 10%;
+}
+
+/* Featuer and Service */
+main .cointainer-feature-service{
+    height: 368px;
+    border-radius: 10px;
+background-color: #F99300;
+}
+main .cointainer-feature-service .feature-service-box{
+    margin-left: 10%;
+    width: 412px;
+height: 380px;
+    border-radius: 8px;
+    background: #111;
+    box-shadow: 18px 32px 4px 1px rgba(0, 0, 0, 0.25);
+}
+main .cointainer-feature-service .feature-service-box h1{
+ padding-top: 60%;
+ padding-left: 10%;
+    display: flex;
+width: 363px;
+height: 72px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hannari;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px; /* 122.222% */
+    letter-spacing: 0.45px;
+    text-transform: capitalize;
+}
+main .cointainer-feature-service  .features{
+    display: flex;
+    flex-direction: column;
+    margin-top: -26.5%;
+    width: 100%; 
+    height: 100%; 
+    text-align: center; 
+    color: #FCF3F3; 
+    font-size: 39px; 
+    font-family: Lalezar; 
+    font-weight: 400; 
+    text-transform: capitalize; 
+    line-height: 25px; 
+    letter-spacing: 0.39px; 
+    word-wrap: break-word;
+    justify-content: flex-end;
+}
+main .cointainer-feature-service  .features .feature-1{
+margin-left: 40%;
+padding-left: 3%;
+background: #111;
+box-shadow: 0px 14px 4px 0px rgba(0, 0, 0, 0.25);
+ width: 838px;
+ padding-top: 30px;
+ text-align: left;
+height: 80px;
+
+}
+main .cointainer-feature-service .eclipse-1{
+   margin-top: -15%;
+    margin-left: 80%;
+    filter:blur(120px);
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Half of the width to create a half circle */
+    background: #F99300;
+    border-radius: 50% 0 0 50%; /* Half circle at the top */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
