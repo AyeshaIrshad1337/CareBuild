@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+body{
+    width: 50%;
+    height: 3890px;
+    position: relative; 
+    background: linear-gradient(180deg, black 28%, rgba(77.56, 73.04, 73.04, 0) 100%);    
+}
+
+header .logo {
+    filter:blur(120px);
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Half of the width to create a half circle */
+    background: #F1F0F0;
+    border-radius: 0 0 50% 0%; /* Half circle at the top */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide the bottom half of the image */
+}
+
+img {
+    width: 50%; /* Adjust as needed */
+    height: 50%;
+    margin-top: -20%; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    position: relative;
+    top: 0; /* Move the image down to show the top half */
+}
+nav .menu{
+    margin-top: -18%;
+     margin-left: 80%;
+    width: 100%;
+    height: 100px;
+    color:white;
+    display: flex;
+  align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-family: Inter;
+    
+    font-size: 20px;
+    position: relative;
+  }
+  
+  .menu a:before{
+    content: '';
+    position:absolute;
+    
+   top:0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid white; 
+    transition:0.4s linear;
+  }
+  .menu a:hover{
+    color: #F99300;
+  }
+  .menu a:hover:before{
+    width:40%;
+    align-items: center;
+   margin-left: 25%;
+  }
