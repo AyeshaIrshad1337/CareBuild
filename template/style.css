@@ -344,3 +344,56 @@ main .cointainer-feature-service .eclipse-1{
     border-radius: 9999px;
 
 }
+.Contact-us{
+    margin-top: -33%;
+}
+.Contact-us h1{
+    color: #F99300;
+font-size: 60px;
+font-family: Inter;
+font-weight: 900;
+text-transform: uppercase;
+line-height: 24px;
+letter-spacing: 0.60px;
+word-wrap: break-word;
+}
+.Contact-us .contact-info{
+    width: 90%; 
+    height: 100%; 
+    margin-top: 2%;
+    display: flex;
+    padding: 13%;
+margin-left: 5%;
+    color: #F99300;
+    border-radius: 25px; 
+    border: 2px #F99300 solid;
+}
+.Contact-us input{
+    background: transparent;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 20%;
+    color: white;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    word-wrap: break-word;
+    border-style: none;
+    border-bottom: 3px solid #F99300;
+    padding-bottom: 6px;
+    margin-left: -40%;
+    margin-top: 10px;
+}
+.Contact-us textarea{
+    position: absolute;
+    background: transparent;
+    border-color: #F99300;
+    width: 30%;
+    height: 30%;
+    height: 30%;
+    margin-top: -10%;
+    margin-left: 40%;
+}
