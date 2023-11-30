@@ -367,7 +367,14 @@ margin-left: 5%;
     border: 2px #F99300 solid;
     
 }
+.Contact-us input:focus{
+    outline: none;
+}
+.Contact-us textarea:focus{
+    outline: none;
+}
 .Contact-us input{
+    
     margin-top: -5%;
     position: relative;
     background: transparent;
