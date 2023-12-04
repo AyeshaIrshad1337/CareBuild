@@ -6,13 +6,95 @@
 }
 html{
     background: linear-gradient(180deg, black 100%, rgb(78, 73, 73) 10%);
-    height: 800px;
+    height: 600px;
 }
 .header{
     width: 100%;
     height: 50px;
     background-color: #F99300;
 }
-body{
-    color:white;
+.header button{
+    border: none;
+    background-color: #F99300;
+    color: white;
+    padding-top: 1%;
+    font-size: medium;
+    cursor: pointer;   
+}
+.header button.back{
+    margin-left: 2%;
+}
+.header button.signup{
+    margin-left: 80%;
+}
+main .logo{
+    width: 10%;
+    height: 10%;
+    margin-left: 46%;
+    
+}
+main .heading{
+    color: #F99300;
+    margin-left: 48%;
+}
+main .email-login h1{
+    color: #F99300;
+    font-size: 20px;
+    margin-left: 12%;
+}
+main .email-login input{
+    width: 30%;
+    padding: 1%;
+    margin-top: 2%;
+    background: transparent;
+    color: #F99300;
+    font-size: medium;
+    border:  1px solid white;
+}
+main .email-login input::placeholder{
+    color: #F99300;
+}   
+main .email-login button.login{
+    width: 30%;
+    padding: 1%;
+    margin-top: 2%;
+    background-color: #F99300;
+    color: white;
+    font-size: medium;
+    border:  2px solid #F99300;
+    cursor: pointer;
+    border-radius: 32px;
+}
+main .email-login button.login:hover{
+    background-color: transparent;
+    color: #F99300;
+    border: 1px solid #F99300;
+}
+main .email-login{
+    margin-left: 20%;
+    margin-top: -20%;
+
+} 
+main .login-other{
+    margin-top: -10%;
+}  
+main .login-other button{
+    width: 30%;
+    padding: 1%;
+    margin-top: 7px;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    border:  2px solid white;
+    cursor: pointer;
+    margin-left: 60%;
+    border-radius: 32px;
+}
+main .login-other button:hover{
+    background-color: #F99300;
+    color: white;
+    border: 1px solid #F99300;
+}
+main .login-other button.google{
+    margin-top: 12px;
 }

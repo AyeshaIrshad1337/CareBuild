@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header class="header">
-        <button>back</button>
-        <button>Create an Account</button>
+        <button class="back"><i class='bx bx-left-arrow-alt'>Back</i></button>
+        <button class="signup">Create   an Account</button>
     </header>
+    <main>
+        <img class="logo" src="lopo-removebg-preview.png" alt="logo">
+        <h1 class="heading">Login</h1>
+        <div style="width: 20%; height: 25%;margin-left:50%;margin-top: 25%;  transform: rotate(-90deg); transform-origin: 0 0; justify-content: flex-start; align-items: center; gap: 23px; display: inline-flex">
+            <div style="flex: 1 1 0; height: 2px; background: white"></div>
+            <div style="transform: rotate(90deg); transform-origin: 0 0; color: #F1F0F0; font-size: 16px; font-family: Avenir; font-weight: 400; margin-left: 9%; word-wrap: break-word">OR</div>
+            <div style="flex: 1 1 0; height: 2px; background: white"></div>
+            </div>
+        <div class="email-login">
+            <h1>Log In</h1>
+<form action="">
+    <input type="email" name="email-login" placeholder="Email"><br>
+    <input type="password" name="password" placeholder="password"><br>
+    <button class="login">Login</button>
+</form>
+        </div>    
+        <div class="login-other">
+            <button class="google"> <i class='bx bxl-google'></i>Continue with Google</button>
+            <button class="Facebook"><i class='bx bxl-facebook-circle' ></i> Continue with Facebook</button> <br>
+
+        </div>
+        </main>
 </body>
 </html>
