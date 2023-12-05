@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    background: linear-gradient(180deg, black 100%, rgb(78, 73, 73) 10%);
+    height: 600px;
+}
+header{
+    margin-top: 15px;
+    color: grey;
+    margin-left: 83%;
+}
+header button{
+    border: none;
+    background-color: transparent;
+    color: #F99300;
+    font-size: 17px;
+}
+main img{
+    width: 15%;
+    margin-left: 45%;
+   margin-bottom: 5px;
+}
+main .signup{
+    background-color: white;
+    display: flex;
+    width: 35%;
+    height: 600px;
+    margin-top: -2%;
+    margin-left: 33%;
+    border-radius: 10px;
+    word-wrap:break-word;
+}
+main .signup h2{
+    margin-left: 35%;
+    margin-top: 4%;
+}
+main .signup input{
+    width: 90%;
+    padding: 15px;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+main .signup h4{
+    color: rgb(63, 62, 62);
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+main .signup p{
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(63, 62, 62);
+}
+main .signup button{
+    width: 90%;
+    padding: 1%;
+    height: 9%;
+    margin-top: 10px;
+    margin-left: 5%;
+    border-radius: 36px;
+    border: 0.1px solid #F99300;
+    background-color: #F99300;
+    color: white;
+    font-size: 17px;
+}
+main .signup button:hover{
+    background-color: transparent;
+    color: #F99300;
+    font-size: 17px;
+}   
+ul{
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+li{
+    margin-left: 50px;
+}   
