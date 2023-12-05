@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    background: linear-gradient(180deg, black 100%, rgb(54, 51, 51) 10%);
+    height: 600px;
+}
+header img.logo{
+    width: 15%;
+    margin-left: 5%;
+}
+header .navbar{
+    float: right;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+header .navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+header .navbar a:before{
+    content: '';
+    position:absolute;
+    
+   top:0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid white; 
+    transition:0.4s linear;
+  }   
+header .navbar a:hover{
+    color: #F99300;
+
+}
+header .navbar a:hover:before{
+    width:80%;
+    margin-left: 12%;
+}
+header .navbar .profile-pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+float: right;
+margin-right:-40% ;
+margin-top: -15%;
+    background: #F99300;
+}
+header .navbar .profile-pic img{
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 10%;
+margin-top: 10%;
+}
+main h1{
+    color: white;
+    margin-left: 9%;
+    margin-top: 1%;
+    font-size: 50px;
+}
+main h1 span{
+    color: #F99300;
+}
+main .Top-blogs{
+    color: white;
+    margin-left: 7%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+main .Top-blogs h3{
+ color: #F99300;
+ margin-bottom: 2%;
+}
+main .Top-blogs .blog{
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+#blog-info {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #blog-info td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-left: 2%;
+    color: black;
+  }
+  
+  #blog-info tr:nth-child(even){background-color: #f2f2f2; 
+
+}
+  
+  
+  #blog-info th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    padding-left: 1%;
+    background-color: transparent;
+    color: #F99300;
+  }
+
+#blog-info td button{
+    border: none;
+    background: transparent;  
+}
+
