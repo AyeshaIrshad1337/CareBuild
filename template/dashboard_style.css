@@ -76,7 +76,7 @@ main .Top-blogs{
 }
 main .Top-blogs h3{
  color: #F99300;
- margin-bottom: 2%;
+ margin-bottom: 1%;
 }
 main .Top-blogs .blog{
     width: 70%;
@@ -85,21 +85,28 @@ main .Top-blogs .blog{
     transition: all 0.3s ease;
 }
 #blog-info {
-    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 80%;
   }
   
-  #blog-info td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    margin-left: 2%;
-    color: black;
-  }
   
-  #blog-info tr:nth-child(even){background-color: #f2f2f2; 
-
+  
+  #blog-info tr.container{
+    border-radius:50%;
+    margin-bottom: 2%;
+    background: white;
+    color: black;
+    height: 50px;
+    
+}   
+td{
+    padding-left: 2%;
 }
+td.left-container{
+    border-radius: 10px 0px 0px 10px;
+}
+td.right-container{
+    border-radius: 0px 10px 10px 0px;  }
   
   
   #blog-info th {
@@ -115,4 +122,111 @@ main .Top-blogs .blog{
     border: none;
     background: transparent;  
 }
+.recent-activity{
+    display: flex;
+    float: right;
+ margin-top: -25%;
+ position: relative;
+ margin-right: 4%;
+}
+.recent-activity button{
+    border: none;
+    background: transparent;
+    color: #F99300;
+    font-size: 15px;
+    margin-left: 200px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+.recent-activity .container{
+    height: 200px;
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 14px;
+    background: white;
+    position: absolute;
+    display: inline-block;
 
+}
+.recent-activity .container .container-1{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2px;
+    color: black;
+}
+.recent-activity .container .container-1 img{
+    width: 12%;
+    border-radius: 60%;
+}
+.recent-activity .container .container-1 h6{
+    font-size: 15px;
+    margin-left: 15%;
+    margin-top: -12%;
+}
+.recent-activity .container .container-1 p{
+    font-size: 12px;
+    margin-left: 15%;
+}   
+
+.recent-activity .container .container-1 span{
+    float: right;
+    font-size: 12px;
+    color: black;
+    margin-top: -5%;
+    margin-right: 4%;
+}
+.Contact-Number{
+    display: flex;
+    float: right;
+ margin-top: -5%;
+ position: relative;
+ margin-right: 4%;
+}
+.Contact-Number button{
+    border: none;
+    background: transparent;
+    color: #F99300;
+    font-size: 15px;
+    margin-left: 180px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+.Contact-Number .container{
+    height: 200px;
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 14px;
+    background: white;
+    position: absolute;
+    display: inline-block;
+
+}
+.Contact-Number .container .container-1{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2px;
+    color: black;
+}
+.Contact-Number .container .container-1 img{
+    width: 12%;
+    border-radius: 60%;
+}
+.Contact-Number .container .container-1 h6{
+    font-size: 15px;
+    margin-left: 15%;
+    margin-top: -12%;
+}
+.Contact-Number .container .container-1 p{
+    font-size: 12px;
+    margin-left: 15%;
+}   
+
+.Contact-Number .container .container-1 span{
+    float: right;
+    font-size: 12px;
+    color: black;
+    margin-top: -5%;
+    margin-right: 4%;
+}
