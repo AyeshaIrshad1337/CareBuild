@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareBuild</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
@@ -14,17 +14,17 @@
    
     </div>
 <nav>
-    <img class="img-logo" src="lopo-removebg-preview.png" style="width: 350px; height: 150px;"/>
+    <img class="img-logo" src="/static/lopo-removebg-preview.png" style="width: 350px; height: 150px;"/>
 <div class="menu">
 <a href="#">Home</a>
 <a href="#">About</a>
 <a href="#">Contact Us</a>
-<a class="SignIn" href="#">SIGN IN</a>
+<a class="SignIn" href="login.html">SIGN IN</a>
 </div>
 
 </nav>
 <div class="SignUp">
-    <a href="#">SIGN UP</a>
+    <a href="signup.html">SIGN UP</a>
   </div>    
 </header>
 <main>
@@ -32,7 +32,7 @@
         <h1>
             Build a better world <br>with <strong>BuildCare!</strong>
         </h1>
-        <img src="building-removebg-preview.png" alt="building-removebg-preview">
+        <img src="/static/building-removebg-preview.png" alt="building-removebg-preview">
             </div>
         
     <div class="main-side">   
@@ -51,7 +51,7 @@
 <div class="About-us">  
 <h1>About Us</h1>
 <div class="About-content">
-<img src="Building_Construction_Logo_template-removebg-preview.png" alt="building-removebg-preview">
+<img src="/static/Building_Construction_Logo_template-removebg-preview.png" alt="building-removebg-preview">
 <p>Welcome to BuildCare, where innovation meets responsibility, and structures are more than just bricks and mortar. At BuildCare, we are on a mission to revolutionize the construction industry by placing environmental sustainability at the forefront of every project.</p>
 </div>
 <div class="Our-Team">
@@ -63,7 +63,7 @@
             <span class="JD">Full Stack Developer & Ai Engineer</span>
         </div>
         <div class="solid-box" ></div>
-        <img  src="ayesha-2.jpg" />
+        <img  src="/static/ayesha-2.jpg" />
     </div>
 
     <div style="width: 360px; height: 359px; left: 502px; top: -360px; margin-left: 7%; position: relative">
@@ -71,7 +71,7 @@
             <span class="Team-name" >Nizamudin<br/></span>
             <span class="JD">Backend Developer & Ai Engineer</span>
         </div>
-        <img src="nizam.jfif">
+        <img src="/static/nizam.jfif">
         <div class="solid-box" ></div>
 
     </div>
@@ -82,7 +82,7 @@
             <span class="JD">Frontend Developer & Ai Engineer</span>
         </div>
         <div class="solid-box" ></div>
-        <img  src="hafsa.jfif" />
+        <img  src="/static/hafsa.jfif" />
     </div>
     
 </div>
@@ -92,7 +92,7 @@
         
   <div style="margin-left: 5%; width: 90%; height: 100%; text-align: center; margin-top: 5%;"><span style="color: white; font-size: 42px; font-family: Lateef; font-weight: 400; text-transform: capitalize; line-height: 46px; letter-spacing: 0.42px; word-wrap: break-word">Have questions, suggestions, or looking to connect with us? We'd love to hear from you! Reach out to </span><span style="color: #F99300; font-size: 42px; font-family: Lateef; font-weight: 400; text-transform: capitalize; line-height: 46px; letter-spacing: 0.42px; word-wrap: break-word">BuildCare</span><span style="color: white; font-size: 42px; font-family: Lateef; font-weight: 400; text-transform: capitalize; line-height: 46px; letter-spacing: 0.42px; word-wrap: break-word"> through our contact form or directly via email. Your feedback is valuable as we work together towards a more sustainable future. Let's build a greener world, one message at a time</span></div>
   <div class="contact-info">
-    <form action="" method="get">
+    <form action="/submit_form" method="get">
         <input type="text"name="name" placeholder="Full Name" required> <br>
         <input type="email" name="email" placeholder="Email" required> <br>
         <input type="subject" name="name" placeholder="Subject" required><br>

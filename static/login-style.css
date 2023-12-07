@@ -13,19 +13,34 @@ html{
     height: 50px;
     background-color: #F99300;
 }
-.header button{
+.header a{
+    text-decoration: none;
     border: none;
     background-color: #F99300;
     color: white;
-    padding-top: 1%;
+    margin-top: 1%;
     font-size: medium;
-    cursor: pointer;   
+    cursor: pointer;  
+    position: relative; 
 }
-.header button.back{
+.header a.back{
+    text-decoration: none;
     margin-left: 2%;
+    background-color: #F99300;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    position: absolute;
 }
-.header button.signup{
+.header a.signup{
+    text-decoration: none;
     margin-left: 80%;
+    background-color: #F99300;
+    color: white;
+    font-size: medium;
+
+    position: absolute;
+    cursor: pointer;   
 }
 main .logo{
     width: 10%;
