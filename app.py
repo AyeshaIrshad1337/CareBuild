@@ -1,38 +1,69 @@
-from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi import FastAPI, Request, HTTPException,Depends,Form
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from pydantic import BaseModel
 import cx_Oracle
-app = FastAPI()
-
+app=FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="template")
-sn_tns = cx_Oracle.makedsn('Host_Name', 'Port_Number', service_name='Service_Name') 
-conn = cx_Oracle.connect(user='Username', password='Password', dsn=sn_tns) 
-
-class ContactForm(BaseModel):
-    name: str 
-    email: str
-    message: str
-
-@app.post("/submit_form", response_class=HTMLResponse)
-async def submit_form(form: ContactForm):
-    # Use the connection
-    c = conn.cursor()
-    c.execute(f"INSERT INTO admin.contact_form (email, message) VALUES ('{form.email}', '{form.message}')") 
-    conn.commit()
-    return {"message": "Form submitted successfully"}
-
 @app.get("/{path:path}", response_class=HTMLResponse)
 async def read_item(request: Request, path: str):
     if path == "" or path == "index.html":
         return templates.TemplateResponse("index.html", {"request": request})
+    elif path == "login.html":
+        return templates.TemplateResponse("login.html", {"request": request})
+    elif path == "signup.html":
+        return templates.TemplateResponse("signup.html", {"request": request})
     return templates.TemplateResponse("index.html", {"request": request})
-@app.get("/login.html", response_class=HTMLResponse)
-async def read_item(request: Request):
-    return templates.TemplateResponse("login.html", {"request": request})
-@app.get("/signup.html", response_class=HTMLResponse)
-async def read_item(request: Request):
-    return templates.TemplateResponse("signup.html", {"request": request})
+@app.post("/submit_contact_form")
+async def submit_contact_form(request: Request, FullName: str = Form(...), email: str = Form(...), Subject: str = Form(...), Message: str = Form(...)):
+    conn = cx_Oracle.connect('admin/admin@localhost:1521/XEXDB')
+    cursor = conn.cursor()
+
+    # Define the SQL query
+    query = """
+    INSERT INTO contactform (FULLNAME, EMAIL, SUBJECT, MESSAGE)
+    VALUES (:1, :2, :3, :4)
+    """
+
+    # Define the values to insert
+    values = (FullName, email, Subject, Message)
+
+    # Execute the query
+    cursor.execute(query, values)
+
+    # Commit the transaction
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+
+    return templates.TemplateResponse("index.html", {"request": request})
+@app.post("/login")
+async def login(request: Request, email: str = Form(...), password: str = Form(...)):
+    conn = cx_Oracle.connect('admin/admin@localhost:1521/XEXDB')
+    cursor = conn.cursor()
+
+    # Define the SQL query
+    query = """
+    SELECT * FROM users
+    WHERE email = :1 AND password = :2
+    """
+    
+    # Define the values to insert
+    values = (email, password)
+    print(email, password)
+    # Execute the query
+    cursor.execute(query, values)
+    print(f"Executing query: {query} with values: {values}")
+    user = cursor.fetchone()
+    print(user)
+    cursor.close()
+    conn.close()
+
+    
+    if user is None:
+        return {"status": "error", "message": "Invalid credentials"}
+
+    return {"status": "success", "message": "Login successful"}

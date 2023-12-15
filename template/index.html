@@ -16,9 +16,9 @@
 <nav>
     <img class="img-logo" src="/static/lopo-removebg-preview.png" style="width: 350px; height: 150px;"/>
 <div class="menu">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Contact Us</a>
+<a href="index.html">Home</a>
+<a href="#About-us">About</a>
+<a href="#Contact-us">Contact Us</a>
 <a class="SignIn" href="login.html">SIGN IN</a>
 </div>
 
@@ -38,7 +38,7 @@
     <div class="main-side">   
     </div>
     <div class="cointainer-feature-service">
-<div class="feature-service-box">
+<div  class="feature-service-box">
     <h1>Feature and Service</h1>
 </div>
 <div class="features">
@@ -48,7 +48,7 @@
     </div>
     <div class="eclipse-1"></div>
 </div>
-<div class="About-us">  
+<div id="About-us" class="About-us">  
 <h1>About Us</h1>
 <div class="About-content">
 <img src="/static/Building_Construction_Logo_template-removebg-preview.png" alt="building-removebg-preview">
@@ -87,21 +87,30 @@
     
 </div>
 </div>
-<div class="Contact-us">
+<div id="Contact-us" class="Contact-us">
   <h1>Contact Us</h1>
         
   <div style="margin-left: 5%; width: 90%; height: 100%; text-align: center; margin-top: 5%;"><span style="color: white; font-size: 42px; font-family: Lateef; font-weight: 400; text-transform: capitalize; line-height: 46px; letter-spacing: 0.42px; word-wrap: break-word">Have questions, suggestions, or looking to connect with us? We'd love to hear from you! Reach out to </span><span style="color: #F99300; font-size: 42px; font-family: Lateef; font-weight: 400; text-transform: capitalize; line-height: 46px; letter-spacing: 0.42px; word-wrap: break-word">BuildCare</span><span style="color: white; font-size: 42px; font-family: Lateef; font-weight: 400; text-transform: capitalize; line-height: 46px; letter-spacing: 0.42px; word-wrap: break-word"> through our contact form or directly via email. Your feedback is valuable as we work together towards a more sustainable future. Let's build a greener world, one message at a time</span></div>
   <div class="contact-info">
-    <form action="/submit_form" method="get">
-        <input type="text"name="name" placeholder="Full Name" required> <br>
+    <form action="/submit_contact_form" method="post">
+        <input type="text" name="FullName" placeholder="Full Name" required> <br>
         <input type="email" name="email" placeholder="Email" required> <br>
-        <input type="subject" name="name" placeholder="Subject" required><br>
-        <textarea name="message" rows="5" placeholder="Message..." required></textarea><br>
-        <button type="button">Submit</button>
+        <input type="text" name="Subject" placeholder="Subject" required><br>
+        <textarea name="Message" rows="5" placeholder="Message..." required></textarea><br>
+        <button type="submit">Submit</button>
     </form>
-  </div>
+    <div id="success-message" style="display: none;">
+        Your message was sent successfully!
+    </div>
+</div>
 </div>
 </div>
 </main>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('success-message').style.display = 'block';
+    });
+    </script>
 </body>
 </html>

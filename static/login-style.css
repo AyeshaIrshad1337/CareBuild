@@ -65,9 +65,13 @@ main .email-login input{
     color: #F99300;
     font-size: medium;
     border:  1px solid white;
+    cursor: text;
 }
 main .email-login input::placeholder{
     color: #F99300;
+}
+main .email-login input.pass{
+ cursor: text;
 }   
 main .email-login button.login{
     width: 30%;

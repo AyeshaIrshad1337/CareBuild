@@ -12,27 +12,20 @@
     </header>
     <main>
         <img src="/static/lopo-removebg-preview.png" alt="logo">
-       <div class="signup"><form action="">
-        <h2>Create an account</h2>
-        <h4>Email</h4>
-        <input type="email" placeholder="Email Address">
-        <h4> Phone Number </h4>
-        <input type="tel" name="phone_number" placeholder="Phone Number">
-       <p>We strongly recommend you to add a phone number which is active this will help verify your account and keep it safe</p>
-       <h4>Password</h4>
-        <input type="password" name="password" placeholder="********">
-      <ul>
-        <li>
-            Use 8 or more characters
-        </li>
-        <li>
-            Use upper and lowercase letters, numbers and symbols
-        </li>
-    </ul>
-         
-        <button>Sign Up</button>
-
-    </form></div>
+       <div class="signup">
+        <form action="/signup" method="post">
+            <h2>Create an account</h2>
+            <h4>Email</h4>
+            <input type="email" name="email" placeholder="Email Address">
+            <h4> Phone Number </h4>
+            <h4>Password</h4>
+            <input type="password" name="password" placeholder="********">
+            <ul>
+                <li>Use 8 or more characters</li>
+                <li>Use upper and lowercase letters, numbers and symbols</li>
+            </ul>
+            <button type="submit">Sign Up</button>
+        </form></div>
         
     </main>
 </body>
