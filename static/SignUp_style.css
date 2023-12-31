@@ -13,7 +13,8 @@ header{
     color: grey;
     margin-left: 83%;
 }
-header button{
+header a{
+    text-decoration: none;
     border: none;
     background-color: transparent;
     color: #F99300;
